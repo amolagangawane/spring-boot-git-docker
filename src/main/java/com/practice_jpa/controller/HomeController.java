@@ -12,6 +12,11 @@ public class HomeController {
     public String home(){
         return "welcome to spring world";
     }
+    @GetMapping("/hello")
+    public String sayHello(){
+        return "Hello there!";
+    }
+
 
     @PostMapping("/test")
     public Map<String,String> testPost(@RequestBody Map<String,String> hm){
